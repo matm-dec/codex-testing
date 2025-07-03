@@ -512,3 +512,17 @@ ComparisonEngine.test_workflow(
 ## Lessons
 
 *This section will be updated as we discover reusable patterns or solve specific problems.*
+
+## Building and Running
+
+This repository includes a small example server demonstrating the planned network inventory application. To build and run it locally:
+
+```bash
+# build the server
+go build ./cmd/server
+
+# run the server
+./server
+```
+
+The server listens on `http://localhost:8080` and serves the static frontend from the `static` directory. Authentication is simulated with a simple session cookie set by visiting `/login`.
